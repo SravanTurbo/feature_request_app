@@ -9,15 +9,15 @@ Every feature request has a priority number w.r.t client and these numbers shoul
 * pip
 
 ## Set up:
-1. Clone the repository : ```[git clone https://github.com/SravanTurbo/feature_request_app.git]```
-2. Navigate to the project directory : ```[cd feature_request_app]```
-3. Create a virtual environment : ```[python3 -m venv env]```
-4. Activate virtual environmet : ```[source ./env/bin/activate]```
-5. Install backend dependencies: ```[pip install -r ./requirements.txt```
-7. Navigate to frontend directory: ```[cd frontend]```
-8. Install frontend dependencies: ```[npm install]```
+1. Clone the repository : ```git clone https://github.com/SravanTurbo/feature_request_app.git```
+2. Navigate to the project directory : ```cd feature_request_app```
+3. Create a virtual environment : ```python3 -m venv env```
+4. Activate virtual environmet : ```source ./env/bin/activate```
+5. Install backend dependencies: ```pip install -r ./requirements.txt```
+7. Navigate to frontend directory: ```cd frontend```
+8. Install frontend dependencies: ```npm install```
 
-6. Start Backend : ```[python backend/manage.py runserver]```
+6. Start Backend : ```python backend/manage.py runserver```
 
 ## Run the application
 You will need two terminals pointed to the frontend and backend directories to start the servers for this application.
