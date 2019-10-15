@@ -13,7 +13,7 @@ Every feature request has a priority number w.r.t client and these numbers shoul
 2. Navigate to the project directory : ```cd feature_request_app```
 3. Create a virtual environment : ```python3 -m venv env```
 4. Activate virtual environmet : ```source ./env/bin/activate```
-5. Install backend dependencies: ```pip install -r ./requirements.txt```
+5. Install backend dependencies: ```pip install -r ./backend/requirements.txt```
 7. Navigate to frontend directory: ```cd frontend```
 8. Install frontend dependencies: ```npm install```
 
@@ -22,8 +22,8 @@ Every feature request has a priority number w.r.t client and these numbers shoul
 ## Run the application
 You will need two terminals pointed to the frontend and backend directories to start the servers for this application.
 
-1. Run this command to start the backend server in the ```[backend]``` directory: ```[python manage.py runserver]``` (You have to run this command while you are sourced into the virtual environment)(This will start the backend on the adddress [localhost:8000/api](http://localhost:8000/api))
-2. Run this command to start the frontend development server in the ```[frontend]``` directory: ```[npm start]``` (This will start the frontend on the adddress [localhost:3000](http://localhost:3000))
+1. Run this command to start the backend server in the ```backend``` directory: ```python manage.py runserver``` (You have to run this command while you are sourced into the virtual environment)(This will start the backend on the adddress [localhost:8000/api](http://localhost:8000/api))
+2. Run this command to start the frontend development server in the ```frontend``` directory: ```[npm start]``` (This will start the frontend on the adddress [localhost:3000](http://localhost:3000))
 
 
 ##Note
