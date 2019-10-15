@@ -24,5 +24,7 @@ router.register(r'client', views.ClientView, 'feature_reqs')
 router.register(r'product-area', views.ProductView, 'feature_reqs')
 
 urlpatterns = [
-        path('admin/', admin.site.urls),   path('api/', include(router.urls))                # add this
+
+        path('admin/', admin.site.urls), 
+        path('api/', include(router.urls))
     ]

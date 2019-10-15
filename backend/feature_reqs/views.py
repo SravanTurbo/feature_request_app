@@ -6,7 +6,7 @@ from .models import FeatureRequests, Client, ProductArea
 # Create your views here.
 class FrView(viewsets.ModelViewSet):
     serializer_class = FrSerializer
-    queryset = FeatureRequests.objects.all()
+    queryset=FeatureRequests.objects.all()
 
 class ClientView(viewsets.ModelViewSet):
     serializer_class = ClientSerializer
