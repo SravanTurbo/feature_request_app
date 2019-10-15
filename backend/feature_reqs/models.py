@@ -30,7 +30,7 @@ class FeatureRequests(models.Model):
 
     def save(self, *args, **kwargs):
         if FeatureRequests.objects.filter(client = self.client, client_priority = self.client_priority):
-            FeatureRequests.objects.filter(client_priority__gte = self.client_priority).update(client_priority=F('client_priority')+1)
+            FeatureRequests.objects.filter(client = self.client, client_priority__gte = self.client_priority).update(client_priority=F('client_priority')+1)
 
         super().save(*args, **kwargs)
 
