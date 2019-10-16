@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let BASE_URL = 'https://hidden-brushlands-93268.herokuapp.com'
+let BASE_URL = 'https://localhost'
 
 export const handleSubmit = async(item, tab) => {
   let path = tab === '1' ? 'feature-request' : tab === '2' ? 'client' : 'product-area'
