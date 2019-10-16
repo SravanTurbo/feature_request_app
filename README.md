@@ -64,9 +64,10 @@ I have put two ways here
 3. Create a virtual environment : ```python3 -m venv env```
 4. Activate virtual environmet : ```source ./env/bin/activate```
 5. Install backend dependencies: ```pip install -r ./backend/requirements.txt```
+6. Start Backend : ```python backend/manage.py runserver```
 7. Navigate to frontend directory: ```cd frontend```
 8. Install frontend dependencies: ```npm install```
-9. Start Backend : ```python backend/manage.py runserver```
+9. start frontend: ```npm start```
 
 **Run the application:**
 You will need two terminals pointed to the frontend and backend directories to start the servers for this application.
