@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let BASE_URL = 'https://localhost'
+let BASE_URL = 'http://localhost:8000'
 
 export const handleSubmit = async(item, tab) => {
   let path = tab === '1' ? 'feature-request' : tab === '2' ? 'client' : 'product-area'

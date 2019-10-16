@@ -8,16 +8,25 @@ import {
   Form,
   FormGroup,
   Input,
-  Label,
-  Table
+  Label
 } from "reactstrap";
 
 export default class CustomModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isError: false,
       activeItem: this.props.activeItem,
     };
+  }
+
+  validateInput = inputItem =>{
+    if(inputItem.title==='' || inputItem.client==='' || inputItem.client_priority===''
+    || inputItem.target_date==='' || inputItem.product_area==='' ){
+      this.setState({isError:true})
+      return
+    }
+    this.props.onSave(inputItem)
   }
 
   handleChange = e => {
@@ -26,7 +35,7 @@ export default class CustomModal extends Component {
     this.setState({ activeItem });
   };
   render() {
-    const { toggle, onSave, clientList, productList } = this.props;
+    const { toggle, clientList, productList } = this.props;
 
     let cList = clientList.length > 0
     && clientList.map((item, i) => {
@@ -48,6 +57,7 @@ export default class CustomModal extends Component {
             <FormGroup>
               <Label for="title">Title</Label>
               <Input
+                invalid = {this.state.isError}
                 type="text"
                 name="title"
                 value={this.state.activeItem.title}
@@ -68,6 +78,7 @@ export default class CustomModal extends Component {
             <FormGroup>
               <Label for="client">Client</Label>
               <Input
+                invalid = {this.state.isError}
                 type="select"
                 name="client"
                 value={this.state.activeItem.client}
@@ -80,16 +91,18 @@ export default class CustomModal extends Component {
             <FormGroup>
               <Label for="client_priority">Client Priority</Label>
               <Input
+                invalid = {this.state.isError}
                 type="text"
                 name="client_priority"
                 value={this.state.activeItem.client_priority}
                 onChange={this.handleChange}
-                placeholder="Set Priority"
+                placeholder="Set a number"
               />
             </FormGroup>
             <FormGroup>
               <Label for="target_date">Target Date</Label>
               <Input
+                invalid = {this.state.isError}
                 type="date"
                 name="target_date"
                 value={this.state.activeItem.target_date}
@@ -100,6 +113,7 @@ export default class CustomModal extends Component {
             <FormGroup>
               <Label for="product_area">Product Area</Label>
               <Input
+                invalid = {this.state.isError}
                 type="select"
                 name="product_area"
                 value={this.state.activeItem.product_area}
@@ -112,7 +126,7 @@ export default class CustomModal extends Component {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="success" onClick={() => onSave(this.state.activeItem)}>
+          <Button color="success" onClick={() => this.validateInput(this.state.activeItem)}>
             Save
           </Button>
         </ModalFooter>

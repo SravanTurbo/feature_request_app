@@ -18,7 +18,7 @@ class ProductArea(models.Model):
 
 class FeatureRequests(models.Model):
     title = models.CharField(max_length=120)
-    description = models.TextField()
+    description = models.TextField(default=None, null=True, blank= True)
     client = models.ForeignKey(Client, on_delete=models.CASCADE, )
     client_priority = models.PositiveIntegerField(db_index=True, null=True, blank=True)
     target_date = models.DateField(null=True, blank=True)
