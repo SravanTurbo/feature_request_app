@@ -75,9 +75,9 @@ You will need two terminals pointed to the frontend and backend directories to s
 2. Run this command to start the frontend development server in the ```frontend``` directory: ```[npm start]``` (This will start the frontend on the adddress [localhost:3000](http://localhost:3000))
 
 
-***Deployment Reference:***
-*Backend: https://devcenter.heroku.com/articles/container-registry-and-runtime
-*Frontend: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+**Deployment Reference:**
+* Backend: https://devcenter.heroku.com/articles/container-registry-and-runtime
+* Frontend: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
 
 
