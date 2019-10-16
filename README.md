@@ -29,6 +29,7 @@ I have put two ways here
 
 #### 1. Fast Mode
 **Requirements:**
+* git
 * docker
 
 **Set up:**
@@ -44,6 +45,7 @@ I have put two ways here
 
 #### 2. Clear Mode:
 **Requirements:**
+* git
 * Python3
 * virtual environment enabler
 * pip
