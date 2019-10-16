@@ -22,6 +22,14 @@ This is a simple Feature Request application built off Django (including the Dja
 ## Wanna try this: 
 Click [here](https://sravanturbo.github.io/feature-request-app-frontend/) to play with the app
 
+### Approach:
+* Feature Request has many to one relationship with Client and Product Area, So lets start with 3 collections (Feature Requests, Client, ProductArea) 
+* Reordering of tasks is done by incrementing the priority of tasks that are gte to the priority that is being assigned w.r.t
+client, this operation is of O(n)
+* CRUD API for all the three collections to interact with client
+* Backend service was hosted on heroku to server the requests from client
+* Frontend is developed using React and hosted using github-pages [here](https://github.com/SravanTurbo/feature-request-app-frontend)
+
 ### Run it on your local machine
 I have put two ways here
 1. Fast Mode
@@ -65,6 +73,11 @@ You will need two terminals pointed to the frontend and backend directories to s
 
 1. Run this command to start the backend server in the ```backend``` directory: ```python manage.py runserver``` (You have  to run this command while you are sourced into the virtual environment)(This will start the backend on the adddress [localhost:8000/api](http://localhost:8000/api))
 2. Run this command to start the frontend development server in the ```frontend``` directory: ```[npm start]``` (This will start the frontend on the adddress [localhost:3000](http://localhost:3000))
+
+
+***Deployment Reference:***
+*Backend: https://devcenter.heroku.com/articles/container-registry-and-runtime
+*Frontend: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 
 
 
