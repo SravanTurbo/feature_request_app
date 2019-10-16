@@ -8,6 +8,8 @@ Every feature request has a priority number w.r.t client and these numbers shoul
 * virtual environment enabler
 * pip
 
+
+
 ## Set up:
 1. Clone the repository : ```git clone https://github.com/SravanTurbo/feature_request_app.git```
 2. Navigate to the project directory : ```cd feature_request_app```
