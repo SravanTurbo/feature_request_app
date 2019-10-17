@@ -14,9 +14,9 @@ This is a simple Feature Request application built off Django (including the Dja
 * **Service** need to prefer consistency over availability
 
 #### Out of scope
-* **User** Login and authentication set up
-* **Users** cannot be tagged to any of the entries
-* **User** Searching any of the entries 
+* **User** login and authentication set up
+* **Tagging** users to any of the entries
+* **Search** for the entries 
 
 
 ## Wanna try this: 
@@ -65,6 +65,7 @@ I have put two ways here
 4. Activate virtual environmet : ```source ./env/bin/activate```
 5. Install backend dependencies: ```pip install -r ./backend/requirements.txt```
 6. Start Backend : ```python backend/manage.py runserver```
+7. open another terminal
 7. Navigate to frontend directory: ```cd frontend```
 8. Install frontend dependencies: ```npm install```
 9. start frontend: ```npm start```
